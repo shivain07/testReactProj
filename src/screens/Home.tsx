@@ -1,5 +1,5 @@
-import { ChangeEvent, useEffect, useState } from 'react';
-import { Form, Col, Row, Image, Pagination } from 'react-bootstrap';
+import { useEffect, useState } from 'react';
+import { Col, Row, Image } from 'react-bootstrap';
 import commonAPIService from '../axios-services/common-api-services';
 import { API_URL } from '../constants/BasicUrl';
 
@@ -40,7 +40,7 @@ function Home() {
                 right: true
             });
         }
-    }, [postNum]);
+    }, [postNum, posts.length]);
     const getuserPosts = () => {
         commonAPIService.get(API_URL.posts).then((res) => {
             setPosts(res.data);

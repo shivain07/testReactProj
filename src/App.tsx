@@ -1,5 +1,5 @@
 import './App.css';
-import { Switch, Route, Link } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import Home from './screens/Home';
 import About from './screens/About';
 import PageWrapper from './containers/PageWrapper';

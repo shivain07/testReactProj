@@ -1,4 +1,3 @@
-import React from 'react';
 import { Container, Navbar, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Logo from '../img/l1.png';
