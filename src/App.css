@@ -27,6 +27,12 @@
 .App-link {
   color: #61dafb;
 }
+.cursor-pointer{
+  cursor: pointer;
+}
+.font-size-lg{
+  font-size: xx-large;
+}
 
 @keyframes App-logo-spin {
   from {

@@ -1,25 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Switch, Route, Link } from 'react-router-dom';
+import Home from './screens/Home';
+import About from './screens/About';
+import PageWrapper from './containers/PageWrapper';
+import AddPost from './screens/AddPost';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div>
+        <Switch>
+          <Route exact path='/' render={(props) => (
+            <PageWrapper>
+              <Home />
+            </PageWrapper>
+          )} />
+          <Route path='/add-post' render={(props) => (
+            <PageWrapper>
+              <AddPost />
+            </PageWrapper>
+          )} />
+          <Route path='/about' render={(props) => (
+            <PageWrapper>
+              <About />
+            </PageWrapper>
+          )} />
+        </Switch>
+      </div>
+    </>
   );
 }
 
