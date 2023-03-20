@@ -65,7 +65,7 @@ function Home() {
     }
     return (
         <Row className='d-flex justify-content-center'>
-            <Col xs={7}>
+            <Col md={7} sm={10} xs={11}>
                 {
                     posts && posts?.slice(postNum.initial, postNum.last)?.map((post, index) => {
                         return <div key={post?.id} className="bg-light m-2 p-2 pt-4 rounded">

@@ -19,7 +19,7 @@ function AddPost() {
     }
     return (
         <Row className='d-flex justify-content-center'>
-            <Col xs={8}>
+            <Col md={7} sm={10} xs={11}>
                 <Toast onClose={() => setShow(false)} show={show} delay={3000} autohide bg={"info"} className="my-2">
                     <Toast.Header>
                         <img
